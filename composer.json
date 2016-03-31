@@ -9,6 +9,10 @@
 		"zizaco/confide": "~4.3@dev",
 		"guzzlehttp/guzzle": "~4.0"
 	},
+	"require-dev":{
+		"barryvdh/laravel-debugbar": "~1.8",
+		"way/generators": "~2.0"
+	},
 	"autoload": {
 		"classmap": [
 			"app/commands",
