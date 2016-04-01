@@ -1,23 +1,22 @@
 <?php
 
-class RapsController extends \BaseController {
+class VideosController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
-	 * GET /raps
+	 * GET /videos
 	 *
 	 * @return Response
 	 */
 	public function index()
 	{
-		$response = [];
-        $response['test'] = Rap::all();
-        return Response::json($response);
+		$response[] = Video::all();
+		return Response::json($response);
 	}
 
 	/**
 	 * Show the form for creating a new resource.
-	 * GET /raps/create
+	 * GET /videos/create
 	 *
 	 * @return Response
 	 */
@@ -28,7 +27,7 @@ class RapsController extends \BaseController {
 
 	/**
 	 * Store a newly created resource in storage.
-	 * POST /raps
+	 * POST /videos
 	 *
 	 * @return Response
 	 */
@@ -39,7 +38,7 @@ class RapsController extends \BaseController {
 
 	/**
 	 * Display the specified resource.
-	 * GET /raps/{id}
+	 * GET /videos/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -51,7 +50,7 @@ class RapsController extends \BaseController {
 
 	/**
 	 * Show the form for editing the specified resource.
-	 * GET /raps/{id}/edit
+	 * GET /videos/{id}/edit
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -63,7 +62,7 @@ class RapsController extends \BaseController {
 
 	/**
 	 * Update the specified resource in storage.
-	 * PUT /raps/{id}
+	 * PUT /videos/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -75,7 +74,7 @@ class RapsController extends \BaseController {
 
 	/**
 	 * Remove the specified resource from storage.
-	 * DELETE /raps/{id}
+	 * DELETE /videos/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response

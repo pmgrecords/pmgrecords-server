@@ -1,5 +1,5 @@
 <?php
 
-class Rap extends BaseModel {
+class Show extends BaseModel {
 	protected $fillable = [];
 }

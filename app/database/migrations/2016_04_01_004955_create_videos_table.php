@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateRapsTable extends Migration {
+class CreateVideosTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,12 +12,11 @@ class CreateRapsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('raps', function(Blueprint $table)
+		Schema::create('videos', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('title');
-			$table->text('body');
-			$table->integer('author_id');
+			$table->integer('order');
+			$table->string('url');
 			$table->timestamps();
 		});
 	}
@@ -30,7 +29,7 @@ class CreateRapsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('raps');
+		Schema::drop('videos');
 	}
 
 }

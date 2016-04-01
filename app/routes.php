@@ -16,4 +16,10 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::resource('raps', 'RapsController');
+Route::resource('artists', 'ArtistsController');
+
+Route::resource('videos', 'VideosController');
+
+Route::resource('products', 'ProductsController');
+
+Route::resource('shows', 'ShowsController');
