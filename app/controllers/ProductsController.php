@@ -1,26 +1,26 @@
 <?php
 
-class ArtistsController extends \BaseController {
+class ProductsController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
-	 * GET /artists
+	 * GET /products
 	 *
 	 * @return Response
 	 */
 	public function index()
 	{
-		$data = Artist::all();
+		$data = Product::all();
 		$response = Response::json($data);
 		$response->header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-			    ->header('Access-Control-Allow-Origin', '*')
-			    ->header('Access-Control-Allow-Headers', 'Content-Type');
+			->header('Access-Control-Allow-Origin', '*')
+			->header('Access-Control-Allow-Headers', 'Content-Type');
 		return $response;
 	}
 
 	/**
 	 * Show the form for creating a new resource.
-	 * GET /artists/create
+	 * GET /products/create
 	 *
 	 * @return Response
 	 */
@@ -31,7 +31,7 @@ class ArtistsController extends \BaseController {
 
 	/**
 	 * Store a newly created resource in storage.
-	 * POST /artists
+	 * POST /products
 	 *
 	 * @return Response
 	 */
@@ -42,7 +42,7 @@ class ArtistsController extends \BaseController {
 
 	/**
 	 * Display the specified resource.
-	 * GET /artists/{id}
+	 * GET /products/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -54,7 +54,7 @@ class ArtistsController extends \BaseController {
 
 	/**
 	 * Show the form for editing the specified resource.
-	 * GET /artists/{id}/edit
+	 * GET /products/{id}/edit
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -66,7 +66,7 @@ class ArtistsController extends \BaseController {
 
 	/**
 	 * Update the specified resource in storage.
-	 * PUT /artists/{id}
+	 * PUT /products/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -78,7 +78,7 @@ class ArtistsController extends \BaseController {
 
 	/**
 	 * Remove the specified resource from storage.
-	 * DELETE /artists/{id}
+	 * DELETE /products/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response

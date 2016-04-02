@@ -10,10 +10,11 @@ class ShowsController extends \BaseController {
 	 */
 	public function index()
 	{
-        $response = Response::json(Show::all());
-        $response->header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-            ->header('Access-Control-Allow-Origin', '*')
-            ->header('Access-Control-Allow-Headers', 'Content-Type');
+		$data = Show::all();
+		$response = Response::json($data);
+		$response->header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+                ->header('Access-Control-Allow-Origin', '*')
+                ->header('Access-Control-Allow-Headers', 'Content-Type');
 		return $response;
 	}
 
