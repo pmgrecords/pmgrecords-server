@@ -11,11 +11,7 @@ class ShowsController extends \BaseController {
 	public function index()
 	{
 		$data = Show::all();
-		$response = Response::json($data);
-		$response->header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-                ->header('Access-Control-Allow-Origin', '*')
-                ->header('Access-Control-Allow-Headers', 'Content-Type');
-		return $response;
+		return $this->setCustomHeaders($data);
 	}
 
 	/**
@@ -37,7 +33,8 @@ class ShowsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$show = Show::find($id);
+		return $this->setCustomHeaders($show);
 	}
 
 	/**
