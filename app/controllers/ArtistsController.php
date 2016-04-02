@@ -45,7 +45,8 @@ class ArtistsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		$artist = Artist::find($id);
+		return $this->setCustomHeaders($artist);
 	}
 
 	/**

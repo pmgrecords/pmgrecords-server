@@ -33,7 +33,8 @@ class ShowsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$show = Show::find($id);
+		return $this->setCustomHeaders($show);
 	}
 
 	/**

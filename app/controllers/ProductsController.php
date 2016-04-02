@@ -45,7 +45,8 @@ class ProductsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+        $video = Video::find($id);
+        return $this->setCustomHeaders($video);
 	}
 
 	/**

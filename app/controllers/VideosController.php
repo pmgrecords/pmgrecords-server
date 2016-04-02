@@ -45,9 +45,10 @@ class VideosController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$video = Video::find($id);
-
-	}
+//        $video = Video::where('id', '=', $id)->first();
+        $video = Video::find($id);
+        return $this->setCustomHeaders($video);
+    }
 
 	/**
 	 * Show the form for editing the specified resource.
