@@ -62,94 +62,87 @@ class ArtistsTableSeeder extends Seeder {
 
         $artist9 = new Artist();
         $artist9->order = 9;
-        $artist9->name = 'WIFIGAWD';
-        $artist9->sound_cloud_url = 'https://soundcloud.com/wifigawd';
-        $artist9->sound_cloud_id = '62752671';
+        $artist9->name = 'JT STEEZ';
+        $artist9->sound_cloud_url = 'https://soundcloud.com/jteesteezy';
+        $artist9->sound_cloud_id = '11167003&';
         $artist9->save();
 
         $artist10 = new Artist();
         $artist10->order = 10;
-        $artist10->name = 'JT STEEZ';
-        $artist10->sound_cloud_url = 'https://soundcloud.com/jteesteezy';
-        $artist10->sound_cloud_id = '11167003&';
+        $artist10->name = 'HOT BOY JODI';
+        $artist10->sound_cloud_url = 'https://soundcloud.com/hotboijode';
+        $artist10->sound_cloud_id = '90532701';
         $artist10->save();
 
         $artist11 = new Artist();
         $artist11->order = 11;
-        $artist11->name = 'HOT BOY JODI';
-        $artist11->sound_cloud_url = 'https://soundcloud.com/hotboijode';
-        $artist11->sound_cloud_id = '90532701';
+        $artist11->name = 'WA$ABI D';
+        $artist11->sound_cloud_url = 'https://soundcloud.com/wasabidpmg';
+        $artist11->sound_cloud_id = '4046729';
         $artist11->save();
 
         $artist12 = new Artist();
         $artist12->order = 12;
-        $artist12->name = 'WA$ABI D';
-        $artist12->sound_cloud_url = 'https://soundcloud.com/wasabidpmg';
-        $artist12->sound_cloud_id = '4046729';
+        $artist12->name = 'TRILLAWULF';
+        $artist12->sound_cloud_url = 'https://soundcloud.com/trillawolf';
+        $artist12->sound_cloud_id = '33218062';
         $artist12->save();
 
         $artist13 = new Artist();
         $artist13->order = 13;
-        $artist13->name = 'TRILLAWULF';
-        $artist13->sound_cloud_url = 'https://soundcloud.com/trillawolf';
-        $artist13->sound_cloud_id = '33218062';
+        $artist13->name = 'GLENNJITSU';
+        $artist13->sound_cloud_url = 'https://soundcloud.com/glenn-latimore';
+        $artist13->sound_cloud_id = '35748391';
         $artist13->save();
 
         $artist14 = new Artist();
         $artist14->order = 14;
-        $artist14->name = 'GLENNJITSU';
-        $artist14->sound_cloud_url = 'https://soundcloud.com/glenn-latimore';
-        $artist14->sound_cloud_id = '35748391';
+        $artist14->name = 'NEEKS';
+        $artist14->sound_cloud_url = 'https://soundcloud.com/neeksthekid';
+        $artist14->sound_cloud_id = '93300652';
         $artist14->save();
 
         $artist15 = new Artist();
         $artist15->order = 15;
-        $artist15->name = 'NEEKS';
-        $artist15->sound_cloud_url = 'https://soundcloud.com/neeksthekid';
-        $artist15->sound_cloud_id = '93300652';
+        $artist15->name = 'DRETTI FRANKS';
+        $artist15->sound_cloud_url = 'https://soundcloud.com/drettifranks';
+        $artist15->sound_cloud_id = '21585826';
         $artist15->save();
 
         $artist16 = new Artist();
         $artist16->order = 16;
-        $artist16->name = 'DRETTI FRANKS';
-        $artist16->sound_cloud_url = 'https://soundcloud.com/drettifranks';
-        $artist16->sound_cloud_id = '21585826';
+        $artist16->name = 'KAMBO';
+        $artist16->sound_cloud_url = 'https://soundcloud.com/kambino';
+        $artist16->sound_cloud_id = '21277008';
         $artist16->save();
 
         $artist17 = new Artist();
         $artist17->order = 17;
-        $artist17->name = 'KAMBO';
-        $artist17->sound_cloud_url = 'https://soundcloud.com/kambino';
-        $artist17->sound_cloud_id = '21277008';
+        $artist17->name = 'BRANTHADON';
+        $artist17->sound_cloud_url = 'https://soundcloud.com/honeyberryjesus';
+        $artist17->sound_cloud_id = '48642063';
         $artist17->save();
 
         $artist18 = new Artist();
         $artist18->order = 18;
-        $artist18->name = 'BRANTHADON';
-        $artist18->sound_cloud_url = 'https://soundcloud.com/honeyberryjesus';
-        $artist18->sound_cloud_id = '48642063';
+        $artist18->name = 'KICKDOE';
+        $artist18->sound_cloud_url = 'https://soundcloud.com/47-ruthle-click';
+        $artist18->sound_cloud_id = '77277754';
         $artist18->save();
 
         $artist19 = new Artist();
         $artist19->order = 19;
-        $artist19->name = 'KICKDOE';
-        $artist19->sound_cloud_url = 'https://soundcloud.com/47-ruthle-click';
-        $artist19->sound_cloud_id = '77277754';
+        $artist19->name = 'SVDFACE D';
+        $artist19->sound_cloud_url = 'https://soundcloud.com/svdfvced3455';
+        $artist19->sound_cloud_id = '9412441';
         $artist19->save();
 
         $artist20 = new Artist();
         $artist20->order = 20;
-        $artist20->name = 'SVDFACE D';
-        $artist20->sound_cloud_url = 'https://soundcloud.com/svdfvced3455';
-        $artist20->sound_cloud_id = '9412441';
+        $artist20->name = 'WULFTRILLA';
+        $artist20->sound_cloud_url = 'https://soundcloud.com/wulftrilla';
+        $artist20->sound_cloud_id = '162970431';
         $artist20->save();
-
-        $artist21 = new Artist();
-        $artist21->order = 21;
-        $artist21->name = 'WULFTRILLA';
-        $artist21->sound_cloud_url = 'https://soundcloud.com/wulftrilla';
-        $artist21->sound_cloud_id = '162970431';
-        $artist21->save();
 	}
 
 }
