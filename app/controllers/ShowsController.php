@@ -11,7 +11,8 @@ class ShowsController extends \BaseController {
 	public function index()
 	{
 		$data = Show::all();
-		return $this->setCustomHeaders($data);
+        $response = $this->setJsonHeaders($data->toArray());
+        return $response;
 	}
 
 	/**
