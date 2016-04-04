@@ -18,7 +18,7 @@ class CreateArtistsTable extends Migration {
 			$table->integer('order');
 			$table->string('name');
 			$table->string('sound_cloud_url');
-			$table->integer('sound_cloud_id');
+			$table->string('sound_cloud_id');
 			$table->timestamps();
 		});
 	}
