@@ -11,7 +11,8 @@ class ArtistsController extends \BaseController {
 	public function index()
 	{
 		$data = Artist::all();
-		return $this->setCustomHeaders($data);
+        $response = $this->setJsonHeaders($data->toArray());
+		return $response;
 	}
 
 	/**

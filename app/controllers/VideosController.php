@@ -11,7 +11,8 @@ class VideosController extends \BaseController {
 	public function index()
 	{
 		$data = Video::all();
-		return $this->setCustomHeaders($data);
+        $response = $this->setJsonHeaders($data->toArray());
+        return $response;
 	}
 
 	/**

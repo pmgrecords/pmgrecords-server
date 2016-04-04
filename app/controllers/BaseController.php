@@ -16,7 +16,7 @@ class BaseController extends Controller {
 	}
 
 
-    protected function setCustomHeaders($data)
+    protected function setJsonHeaders($data)
     {
         $response = Response::json($data);
         $response->header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')

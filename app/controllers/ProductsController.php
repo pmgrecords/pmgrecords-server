@@ -11,7 +11,8 @@ class ProductsController extends \BaseController {
 	public function index()
 	{
 		$data = Product::all();
-		return $this->setCustomHeaders($data);
+        $response = $this->setJsonHeaders($data->toArray());
+        return $response;
 	}
 
 	/**
