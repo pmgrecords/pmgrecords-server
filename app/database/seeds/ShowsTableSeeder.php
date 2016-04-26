@@ -6,7 +6,6 @@ class ShowsTableSeeder extends Seeder {
 	public function run()
 	{
 		$event1 = new Show();
-		$event1->order = 1;
 		$event1->name = 'noise in the hood festival';
 		$event1->date = '2016/04/08';
 		$event1->time = '8:00 PM';
@@ -17,7 +16,6 @@ class ShowsTableSeeder extends Seeder {
 		$event1->save();
 
 		$event2 = new Show();
-		$event2->order = 2;
 		$event2->name = 'DAD Tour';
 		$event2->date = '2016/04/08';
 		$event2->venue_name = 'TBD';

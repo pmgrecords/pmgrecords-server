@@ -15,7 +15,6 @@ class CreateShowsTable extends Migration {
 		Schema::create('shows', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('order');
 			$table->string('name');
 			$table->date('date')->nullable();
             $table->string('time')->nullable();
